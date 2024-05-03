@@ -37,3 +37,48 @@ This project aims to create a survey form focusing on cosmetics. The form is des
 
 **Acknowledgments:**
 We would like to express our gratitude to Mr. Vibhu Sharma for their guidance and support throughout the development of this project. Additionally, we thank our peers for their valuable feedback and contributions.
+
+<table>
+  <tr>
+    <th>Feature</th>
+    <th>Description</th>
+    <th>Responsible Team Member</th>
+    <th>Target Completion Date</th>
+  </tr>
+  <tr>
+    <td>Initial Project Setup</td>
+    <td>Setting up the project repository, organizing folder structure, and initializing Git.</td>
+    <td>Manager</td>
+    <td>MM/DD/YYYY</td>
+  </tr>
+  <tr>
+    <td>HTML Structure</td>
+    <td>Creating the basic structure of the survey form using HTML.</td>
+    <td>Developer</td>
+    <td>MM/DD/YYYY</td>
+  </tr>
+  <tr>
+    <td>CSS Styling</td>
+    <td>Styling the survey form to make it visually appealing and user-friendly.</td>
+    <td>Developer</td>
+    <td>MM/DD/YYYY</td>
+  </tr>
+  <tr>
+    <td>JavaScript Functionality</td>
+    <td>Implementing dynamic functionality and form validation using JavaScript.</td>
+    <td>Developer</td>
+    <td>MM/DD/YYYY</td>
+  </tr>
+  <tr>
+    <td>Testing</td>
+    <td>Thoroughly testing the survey form for functionality, responsiveness, and compatibility.</td>
+    <td>Tester</td>
+    <td>MM/DD/YYYY</td>
+  </tr>
+  <tr>
+    <td>Final Review and Documentation</td>
+    <td>Reviewing the project for any final adjustments, documenting the project details, and preparing for submission.</td>
+    <td>Manager</td>
+    <td>MM/DD/YYYY</td>
+  </tr>
+</table>
