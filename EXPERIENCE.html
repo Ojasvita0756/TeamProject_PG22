@@ -12,7 +12,6 @@
 <body>
     <div class="survey-container">
         <h1>CUSTOMER SURVEY</h1>
-        <i><p>THANK YOU FOR SHOPPING WITH US. PLEASE TAKE A FEW MINUTES AND LET US KNOW ABOUT HOW WAS YOUR EXPERIENCE.</p></i>
         <hr>
         <p class="rating">VERY BAD</p>
         <p class="rating">BAD</p>
@@ -120,21 +119,7 @@
            <center><BUTton><A href="http://127.0.0.1:5500/project.html/frontpage.html">BACK</A></BUTton></center>
           
     </div></form></body>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var form = document.getElementById('surveyForm');
-    
-            form.addEventListener('submit', function (event) {
-                event.preventDefault();
-    
-                var isConfirmed = window.confirm('Are you sure you want to submit the survey?');
-    
-                if (isConfirmed) {
-                    form.submit();
-                }
-            });
-        });
-    </script>
+  
     </html>
     
     <style>
@@ -182,7 +167,6 @@ cursor: pointer;
             justify-content: center;
             height:800px; 
             margin: 0;
-           background-image: url("https://img.lovepik.com/background/20211021/large/lovepik-simple-cosmetic-background-image_401603911.jpg");
         }
 
         .survey-container {
