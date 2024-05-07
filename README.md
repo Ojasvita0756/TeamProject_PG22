@@ -4,9 +4,9 @@
 This project aims to create a survey form focusing on cosmetics. The form is designed to gather user feedback and preferences regarding various cosmetic products and brands. The survey form will be implemented using HTML, CSS, and JavaScript.
 
 **Team Members:**
-1. Manager: Ojasvita (Roll no. 2310990756)
-2. Developer: Nishant (Roll no. 2310990753)
-3. Tester: Nomita (Roll no. 2310990755)
+1. Ojasvita (Roll no. 2310990756)
+2. Nishant (Roll no. 2310990753)
+3. Nomita (Roll no. 2310990755)
 
 **Project Structure:**
 - **HTML:** The project utilizes HTML for structuring the survey form and its content.
@@ -29,11 +29,6 @@ This project aims to create a survey form focusing on cosmetics. The form is des
    cd cosmetic-survey-form
    ```
 3. Open the `LoginSurveyForm.html` file in your preferred web browser.
-
-**Contributions:**
-- **Manager:** Oversees the project, coordinates team efforts, and ensures project milestones are met.
-- **Developer:** Implements the survey form using HTML, CSS, and JavaScript. Responsible for functionality and responsiveness.
-- **Tester:** Conducts thorough testing of the survey form to identify and report any bugs or issues.
 
 **Acknowledgments:**
 We would like to express our gratitude to Mr. Vibhu Sharma for their guidance and support throughout the development of this project. Additionally, we thank our peers for their valuable feedback and contributions.
