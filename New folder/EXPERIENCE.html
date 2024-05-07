@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form id="surveyForm">
+        <div class="survey-container">
+            <h1>CUSTOMER SURVEY</h1>
+            <i><p>THANK YOU FOR SHOPPING WITH US. PLEASE TAKE A FEW MINUTES AND LET US KNOW ABOUT HOW WAS YOUR EXPERIENCE.</p></i>
+            <hr>
+            <p class="rating">VERY BAD</p>
+            <p class="rating">BAD</p>
+            <p class="rating">NEUTRAL</p>
+            <p class="rating">GOOD</p>
+            <p class="rating">EXCELLENT</p>
+            <hr>
+            <table style="width:1000px;">
+                <tr>
+                    <td>NAVIGATION AND USABILITY</td>
+                    <td> <input type="radio" id="Price1" name="USER1" value="Price1">
+                        <label for="Price1" class="radio-label"></label></td>
+                    <td><input type="radio" id="Price2" name="USER1" value="Price2">
+                        <label for="Price2" class="radio-label"></label></td>
+                    <td><input type="radio" id="Price3" name="USER1" value="Price3">
+                        <label for="Price3" class="radio-label"></label></td>
+                    <td><input type="radio" id="Price4" name="USER1" value="Price4">
+                        <label for="Price4" class="radio-label"></label></td>
+                    <td><input type="radio" id="Price5" name="USER1" value="Price5">
+                        <label for="Price5" class="radio-label"></label></td>
+                </tr>
+
+            </table>
+            <center>
+                <button type="submit">SUBMIT SURVEY</button>
+                <button><a href="http://127.0.0.1:5500/project.html/frontpage.html">BACK</a></button>
+            </center>
+        </div>
+    </form>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var form = document.getElementById('surveyForm');
+            var submitButton = form.querySelector('button[type="submit"]');
+
+            form.addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                var isConfirmed = window.confirm('Are you sure you want to submit the survey?');
+
+                if (isConfirmed) {
+                    // Here you can replace the alert with your submission logic
+                    alert('Survey submitted successfully!');
+                    // You may want to reset the form after submission
+                    form.reset();
+                }
+            });
+
+            // Optional: Display a message on hover over the submit button
+            submitButton.addEventListener('mouseover', function () {
+                submitButton.textContent = 'Submit Survey';
+            });
+
+            submitButton.addEventListener('mouseout', function () {
+                submitButton.textContent = 'SUBMIT SURVEY';
+            });
+        });
+    </script>
+
+    <style>
+        button {
+            background-color: rgb(227, 204, 231);
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            margin-top: 20px;
+            cursor: pointer;
+            margin-right: 1px;
+        }
+        
+        button:hover {
+            background-color: rgb(153, 125, 199);
+        }
+
+        table, th, td {
+            border: 0px solid #ffffff; 
+            border-collapse: collapse;
+            padding-right: 111px; 
+            font-size: 20px;
+            padding-left: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        th, td {
+            text-align: left;
+        }
+
+        input[type="radio"] {
+            width: 20px;
+            height: 15px;
+            cursor: pointer;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            height: 800px; 
+            margin: 0;
+            background-image: url("https://img.lovepik.com/background/20211021/large/lovepik-simple-cosmetic-background-image_401603911.jpg");
+        }
+
+        .survey-container {
+            background-color: #d4f8da;
+            border-radius: 25px;
+            max-width: 1000px;
+            height: 100%;
+            text-align: right;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .survey-container p {
+            padding-left: 60px;
+            text-align: center;
+            padding-right: 60px;
+            font-size: 15px;
+        }
+
+        .survey-container h1 {
+            color: rgb(0, 0, 0);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 40px;
+            text-align: center;
+        }
+
+        .survey-container hr {
+            border-color: rgb(0, 0, 0);
+        }
+
+        .survey-container p.rating {
+            display: inline-flex;
+            color: rgb(0, 0, 0);
+            font-size: 20px;
+            width: max-content;
+            cursor: pointer;
+            margin-left: auto;
+            text-align: right;
+            padding: left 50px;
+            padding-right: 20px;
+        }
+    </style>
+</body>
+</html>

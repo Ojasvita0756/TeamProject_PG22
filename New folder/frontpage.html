@@ -1,0 +1,604 @@
+ <html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body style="background-image: url('https://images.pexels.com/photos/3785147/pexels-photo-3785147.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');"> 
+    <section>
+      <div class="text"><p>BUY BEST COSMETIC PRODUCTS</p>
+      </div>
+      <div class="top-container">
+
+    <nav class="navbar" >
+     
+
+
+         <A href="#"> HOME </A>
+         <A href="http://127.0.0.1:5500/project.html/starrating.html">RATE US </A>
+         <A href="javascript:void(0);" onclick="confirmSurvey()">GIVE FEEDBACK</A>
+         <A href="file:///C:/Users/DELL/OneDrive/Desktop/New%20folder/EXPERIENCE.html">EXPERIENCE</A>
+         <A href="http://127.0.0.1:5500/project.html/login1.html">LOGOUT</A>
+        </nav>
+            <div class="search-box">
+              <form action="" class="search-box">
+               <input type="search" placeholder="Search here" id="search-box">
+              </form>  
+            </div> 
+    
+
+<script>
+  function confirmSurvey() {
+      var userConsent = confirm("Do you want to start the survey?");
+
+      if (userConsent) {
+          window.location.href = "http://127.0.0.1:5500/project.html/FEEDBACK.html";
+      } else {
+          alert("Survey canceled.");
+      }
+  }
+</script>
+
+
+
+    </section>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+*
+ {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+.text {
+  background-color: rgb(196, 159, 214);
+  height: 60px;
+  color: #f0dddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text p {
+  font-size:30px;
+  animation: slide 5s ease-in-out infinite;
+}
+
+@keyframes slide {
+
+  50% {
+    transform: translateX(50%); 
+  }
+ 
+}
+.top-container{
+        display: flex;
+        align-items: flex-start;
+        justify-content:space-between;
+        background-color: rgb(224, 217, 224);
+        height: 100PX;
+    }
+
+    .logo img{
+        max-width: 100%;
+    }
+   
+    .navbar a {display: inline-flex;
+        margin-top:30px;
+        margin-right:60px;
+        color:rgb(50, 3, 25);
+        text-decoration: none;
+        font-size:25px;
+        width: max-content;
+        position: relative;
+        cursor: pointer;
+        margin-left:20px;
+    }
+.navbar a::after{
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  height:4px;
+  width:100%;
+  left: 0;
+  background-color: #000000;
+  transition: 0.3s;
+  transition-timing-function: ease-in-out;
+  transform: scaleX(0);
+
+}
+  
+    .navbar a:hover::after{
+    transform: scaleX(1);
+     }
+
+    .navbar a:hover{
+      color: rgb(141, 106, 152);
+     }
+    .search-box{
+      margin-right: 0px;
+        margin-top:30px;
+       }
+    
+    .search-box input[type="search"]{
+        width: 200px;
+        height: 40px;
+        font-size:15px;
+        background: transparent;
+        border: 1px solid #9d78a5; 
+    }
+
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+     
+      var isLoggedIn = sessionStorage.getItem('isLoggedIn');
+
+      
+      if (isLoggedIn === 'true') {
+          alert('Login successful!');
+         
+          sessionStorage.removeItem('isLoggedIn');
+      }
+  });
+</script>
+
+<body>
+  <section>
+    <div class="products">
+     <div class="container">
+        <div class="card">
+          <div class="imgBx">  
+              <img src="https://99designs-blog.imgix.net/blog/wp-content/uploads/2017/12/1intricate-4-e1563283830289.jpeg?auto=format&q=60&fit=max&w=930">
+          </div>  
+          <div class="contentbox">  
+              <h2>ALOVERA GEL</h2>   
+              <a class="buy-button product1">Add To Cart</a>  
+              <a href="http://127.0.0.1:5500/project.html/products.html" class="buy-button product1">Buy Now</a>
+
+          </div>  
+        </div>
+       <div class="card">
+          <div class="imgBx">  
+              <img src="https://99designs-blog.imgix.net/blog/wp-content/uploads/2017/12/1cool-illustration-intricate-e1563283669883.jpeg?auto=format&q=60&fit=max&w=930">
+          </div>  
+          <div class="contentbox">  
+              <h2>ARGAN OIL</h2>   
+              <a class="buy-button product2">Add To Cart</a> 
+                <a href="http://127.0.0.1:5500/project.html/2.html" class="buy-button product2">Buy Now</a>
+          </div>  
+       </div>
+
+       <div class="card">
+          <div class="imgBx">  
+              <img src="https://99designs-blog.imgix.net/blog/wp-content/uploads/2017/12/2-6-attachment_101570301-e1563284149647.jpeg?auto=format&q=60&fit=max&w=930">
+          </div>  
+          <div class="contentbox">  
+              <h2>UNIVERSAL TINT</h2>   
+              <a class="buy-button product3">Add To Cart</a> 
+              <a href="http://127.0.0.1:5500/project.html/3.html" class="buy-button product3">Buy Now</a>
+
+          </div>  
+       </div>
+
+       <div class="card">
+          <div class="imgBx">  
+              <img src="https://99designs-blog.imgix.net/blog/wp-content/uploads/2017/12/3-pastels-e1563286643268.jpg?auto=format&q=60&fit=max&w=930">
+          </div>  
+          <div class="contentbox">  
+              <h2>MAKEUP REMOVER</h2>   
+              <a class="buy-button product4">Add To Cart</a>
+                <a href="http://127.0.0.1:5500/project.html/4.HTML" class="buy-button product4">Buy Now</a>
+ 
+          </div>  
+       </div>
+
+       <div class="card">
+          <div class="imgBx">  
+              <img src="https://99designs-blog.imgix.net/blog/wp-content/uploads/2017/12/3-minimal-pastel-brush-stroke-e1563286557737.jpeg?auto=format&q=60&fit=max&w=930">
+          </div>  
+          <div class="contentbox">  
+              <h2>FACIAL OIL</h2>   
+              <a class="buy-button product5">Add To Cart</a>
+                <a href="http://127.0.0.1:5500/project.html/5.HTML" class="buy-button product5">Buy Now</a>
+          </div>  
+       </div>
+
+       <div class="card">
+          <div class="imgBx">  
+              <img src="https://99designs-blog.imgix.net/blog/wp-content/uploads/2017/12/3-attachment_108738224-e1563287363852.jpeg?auto=format&q=60&fit=max&w=930">
+          </div>  
+          <div class="contentbox">  
+              <h2>WASH GEL</h2>   
+              <a class="buy-button product6">Add To Cart</a> 
+              <a href="http://127.0.0.1:5500/project.html/6.HTML" class="buy-button product6">Buy Now</a>
+          </div>  
+      </div>
+    </div>
+  </section>
+</body>
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Poppins:100,300,400,500,600,700,800, 800i, 900&display=swap');  
+
+
+  .products .container {
+display: flex;
+flex-wrap:wrap;
+justify-content: space-between;
+margin-top:50px;
+margin-bottom: 50px;
+}
+
+.container .card {
+width: 350px;
+height: 450px;
+margin: 10px;
+}
+
+.container {  
+position:relative;
+justify-content: space-around;
+
+}  
+.container .card {  
+position: relative;  
+width: 320px;  
+height: 450px;  
+background:beige;  
+border-radius: 20px;  
+overflow: hidden;  
+}
+
+.container .card:after {    
+position:absolute;  
+top: 30%;  
+left: -20%;  
+font-size: 12em;  
+font-weight: 800;  
+font-style: italic;  
+color: rgba(82, 10, 37, 0.04);  
+}  
+.container .card .imgBx {  
+position: absolute;  
+top: 50%;  
+transform: translateY(-50%);  
+z-index: 1000;  
+width: 100%;  
+height: 100%;  
+transition:1.5s;  
+}  
+.container .card:hover .imgBx {  
+top: 0%;  
+transform: translateY(-25%); 
+ 
+}  
+.container .card .imgBx img {  
+position:relative;  
+width:320px;  
+}  
+.container .card .contentbox {  
+position: absolute;  
+bottom: 0;  
+width: 100%;  
+height: 100px;  
+text-align: center;  
+transition:1.5s;  
+}  
+  
+.container .card .contentbox h2 {
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+  .container .card:hover .contentbox h2 {
+  color: #802ba5;
+  top: 0%;  
+transform:translateY(-20%); 
+}
+ 
+.container .card .contentbox .color{
+background-color: #d0cbd5;
+padding: 10px 20px;
+border-radius: 5px;
+cursor: pointer;
+opacity: 0;
+visibility:hidden;
+}
+.container .card:hover .contentbox .color {  
+opacity: 1;  
+visibility: visible;  
+transition-delay: .1s;  
+}  
+.buy-button.product1 {
+background-color: #d0cbd5;
+color: #fff; 
+padding: 10px 20px;
+border-radius: 5px;
+cursor: pointer;
+opacity: 0;
+visibility:hidden;
+
+}
+.container .card:hover .buy-button.product1 {
+  opacity: 1;
+  visibility: visible;
+}
+
+.buy-button.product2 {
+background-color: #d0cbd5;
+color: #fff; 
+padding: 10px 20px;
+border-radius: 5px;
+cursor: pointer;
+margin-top:3px ;
+opacity: 0;
+visibility:hidden;
+
+}
+.container .card:hover .buy-button.product2 {
+  opacity: 1;
+  visibility: visible;
+
+}
+.buy-button.product3 {
+background-color:  #d0cbd5;
+color: white;
+padding: 10px 20px;
+border-radius: 5px;
+cursor: pointer;
+margin-top:3px ;
+opacity: 0;
+visibility:hidden;
+
+}
+.container .card:hover .buy-button.product3 {
+  opacity: 1;
+  visibility: visible;
+
+}    
+.buy-button.product4 {
+background-color: #d0cbd5;
+color: #fff; 
+padding: 10px 20px;
+border-radius: 5px;
+cursor: pointer;
+margin-top:3px ;
+opacity: 0;
+visibility:hidden;
+
+}
+.container .card:hover .buy-button.product4 {
+  opacity: 1;
+  visibility: visible;
+
+}
+
+
+.buy-button.product5 {
+background-color:  #d0cbd5;
+color: #fff; padding: 10px 20px;
+border-radius: 5px;
+cursor: pointer;
+margin-top:3px ;
+opacity: 0;
+visibility:hidden;
+
+}
+.container .card:hover .buy-button.product5 {
+  opacity: 1;
+  visibility: visible;
+
+}
+
+.buy-button.product6 {
+background-color: #d0cbd5;
+color: white;
+padding: 10px 20px;
+border-radius: 5px;
+cursor: pointer;
+margin-top:3px ;
+opacity: 0;
+visibility:hidden;
+
+}
+.container .card:hover .buy-button.product6 {
+  opacity: 1;
+  visibility: visible;
+
+}  
+</style>
+<section>
+ <hr size="5px">
+  <div class="footer">
+    <div class="footer-row">
+      <div class="footer-col">
+        <h4><a href="#">Info</a></h4>
+        <ul class="links">
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Compressions</a></li>
+        <li><a href="#">Customers</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Collection</a></li>
+        </ul>
+     </div>
+                   
+      <div class="footer-col">
+       <h4><a href="#">Get help</a></h4>
+       <ul class="links">
+       <li><a href="#">FAQ</a></li>
+       <li><a href="#">Shipping</a></li>
+       <li><a href="#">Returns</a></li>
+       <li><a href="#">Order Status</a></li>
+       <li><a href="#">Payment Options</a></li>
+       </ul>
+      </div>
+                   
+      <div class="footer-col">
+        <h4><a href="#">Quick Links</a></h4>
+        <ul class="links">
+        <li><a href="#">Terms and Conditions</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Disclaimer</a></li>
+        </ul>
+      </div>
+                   
+      <div class="footer-col">
+        <h4><a href="#">Newsletter</a></h4>
+        <p> Subscribe to our newsletter for a weekly dose of news, updates, helpful tips, and exclusive offers</p>
+        <form action="#">
+        <input type="text" placeholder="Enter your email address" required>
+         <button type="submit">SUBSCRIBE</button>
+        </form>
+        <div class="icons">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+        </div>
+    </div>
+  </div>
+</section>
+<style>
+.footer-col h4 a{
+color: #000000;
+text-decoration: none;
+}
+.footer-col h4 a:hover{
+color: rgb(255, 234, 0);
+text-decoration: none;
+}
+.footer {
+position:relative;
+bottom: 0;
+width: 100%;
+border-radius: 6px;
+}
+.footer .footer-row {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+gap: 3.5rem;
+padding: 60px;
+background-color:rgb(154, 140, 161);
+}
+
+.footer-row .footer-col h4 {
+color: #ffffff;
+font-size: 1.2rem;
+font-weight: 400;
+}
+
+.footer-col .links {
+margin-top: 20px;
+}
+
+.footer-col .links li {
+list-style: none;
+margin-bottom: 10px;
+}
+
+.footer-col .links li a {
+text-decoration: none;
+color: #ffffff;
+}
+
+.footer-col .links li a:hover {
+color: #b3ff00;
+}
+.footer-col p:hover {
+color: rgb(255, 255, 255);
+}
+
+.footer-col p {
+margin: 20px 0;
+color:white;
+max-width: 300px;
+cursor: pointer;
+}
+.footer-col p:hover{
+color: #ff0000;
+}
+.footer-col form {
+display: flex;
+gap: 5px;
+}
+
+.footer-col input {
+height: 40px;
+border-radius: 6px;
+background: none;
+width: 100%;
+outline: none;
+border: 3px solidwhite ;
+caret-color:rgb(255, 255, 255);
+color:white;
+padding-left: 10px;
+}
+
+.footer-col input::placeholder {
+color:white;
+}
+
+.footer-col form button {
+background:white;
+color: rgb(0, 0, 0);
+outline: none;
+border: none;
+padding: 10px 15px;
+border-radius: 6px;
+cursor: pointer;
+font-weight: 500;
+transition: 0.2s ease;
+}
+
+.footer-col form button:hover {
+background: #d9ff00;
+}
+
+.footer-col .icons {
+display: flex;
+margin-top: 30px;
+gap: 30px;
+cursor: pointer;
+}
+
+.footer-col .icons i {
+color:white;
+}
+
+.footer-col .icons i:hover  {
+color: #802ba5;
+}
+
+@media (max-width: 768px) {
+.footer {
+position: relative;
+bottom: 0;
+left: 0;
+transform: none;
+width: 100%;
+border-radius: 0;
+}
+
+.footer .footer-row {
+padding: 20px;
+gap: 1rem;
+}
+
+.footer-col form {
+display: block;
+}
+
+.footer-col form :where(input, button) {
+width: 100%;
+}
+
+.footer-col form button {
+margin: 10px 0 0 0;
+}
+}
+</style>
+</html>

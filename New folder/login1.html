@@ -1,0 +1,202 @@
+<html>
+    <head>
+        <title>Login Page</title>
+    </head>
+    <body>
+    
+    <section>
+        <div class="form-box">
+            <div class="form-value">
+                <form id="loginForm" action="">
+                    <h1>Login</h1><br><br>
+                    <div class="inputbox">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input type="text" id="email" name="email" required>
+                        <label for="email">Email</label>
+                    </div><br><br>
+                    <div class="inputbox">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" id="password" name="password" required>
+                        <label for="">Password</label>
+                    </div><br><br>
+                    <div class="forget">
+                        <label for="">
+                            <input type="checkbox">Remember Me 
+                            <a href="http://127.0.0.1:5500/project.html/login3.html">Forgot Password?</a>
+                        </label>
+                    </div><br>
+                    
+                    <button type="button" onclick="validateLogin()">Login</button>
+                    <br><br>
+                    <div class="register">
+                        <p>Don't have an account?<a href="http://127.0.0.1:5500/project.html/login2.html">Register Now</a></p>
+                    </div>
+                </form>
+                <p id="errorMessage" style="color: red;"></p>
+                <script src="login.js"></script>
+            </div>
+        </div>
+    </section>  
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>  
+
+    <script>
+       function validateLogin() {
+    var email = document.getElementById('email').value;
+    var password = document.getElementById('password').value;
+
+    if (email === "" || password === "") {
+        document.getElementById('errorMessage').innerHTML = "Please fill in all details.";
+    } else {
+        window.location.href = "http://127.0.0.1:5500/project.html/frontpage.html";
+    }
+}
+
+    </script>
+    
+<script>
+    function validateLogin() {
+        var email = document.getElementById('email').value;
+        var password = document.getElementById('password').value;
+
+        if (email === "" || password === "") {
+            document.getElementById('errorMessage').innerHTML = "Please fill in all details.";
+        } else {
+           
+            sessionStorage.setItem('isLoggedIn', 'true');
+
+          
+            window.location.href = "http://127.0.0.1:5500/project.html/frontpage.html";
+        }
+    }
+</script>
+
+
+    </body>
+    <style>
+          *{
+       margin: 0;
+       padding: 0;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    }
+
+    section{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        width:100%;
+        background-image: url('https://img.freepik.com/free-photo/flowers-with-makeup-brushes-compact-face-powder-mint-green-backdrop_23-2148129517.jpg?w=996&t=st=1695468248~exp=1695468848~hmac=9c99059b9c9be3bc425529dec88a190792920a851c46e4e93deabf560670b1db');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .form-box{
+        position: relative;
+        width: 400px;
+        height: 450px;
+        background:transparent;
+        border: 2px solid rgb(0, 0, 0);
+        border-radius: 25px;
+        justify-content:center;
+        align-items: center;
+        backdrop-filter: blur(5px);
+    }
+    h1{
+        font-size:3em;
+        color:rgb(0, 0, 0);
+        text-align: center;
+        
+    }
+    .inputbox{
+        margin-left: 40px;
+        width:80%;
+        position:relative;
+        border-bottom: 2px solid rgb(0, 0, 0);
+
+
+    }
+    .inputbox label{
+        
+        top:75%;
+        position: absolute;
+        left: 5px;
+        transform: translateY(-50%);
+        color: rgb(0, 0, 0);
+        font-size: large;
+        transition: .5s;
+    }
+    input:focus ~ label,
+    input:valid ~ label {
+        top: -1px
+    }
+    
+    
+    .inputbox input{
+        
+        width: 100%;
+        height: 50px;
+        background: transparent;
+        border: none;
+        outline: none;
+        font-size: large;
+        padding:0 35px 0 5px;
+        color: rgb(0, 0, 0);
+    }
+
+    .inputbox ion-icon{
+        position: absolute;
+        right: 8px;
+        color: rgb(0, 0, 0);
+        font-size: large;
+        top: 20px;
+    }
+    .forget{
+        font-size: large;
+        color: rgb(0, 0, 0);
+        display: flex;
+        justify-content: center;
+    }
+    .forget label input{
+        margin-right: 3px;
+
+    }
+    .forget label a{
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+    }
+    .forget label a:hover{
+        text-decoration: underline;
+    }
+    button{
+        width: 80%;
+        height: 40px;
+        border-radius: 50px;
+        border:2px solid black;
+        background:rgb(0, 0, 0);
+        color: beige;
+        cursor: pointer;
+        font-size: large;
+        font-weight: 700;
+        margin-left: 40px;
+    }
+    .register{
+        font-size:medium;
+        color: rgb(0, 0, 0);
+        text-align: center;
+    }
+   
+    .register p a{
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        font-weight: 600;
+    }
+
+    .register p a:hover{
+        text-decoration: underline;
+
+    }
+    </style>
+</html>
