@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+     background-image: url("https://img.mensxp.com/media/content/2018/Mar/stunning-pictures-of-the-norway-night-sky1400-1521209218.jpg");
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    form {
+      background-color:rgb(113, 202, 237);
+      padding:30px;
+      border-radius: 8px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      width:500px;
+      height: 500px;
+      padding-bottom:0px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 16px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #4caf50;
+      color: #fff;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <form id="surveyForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" required>
+
+    <label for="feedback">Feedback:</label>
+    <textarea id="feedback" name="feedback" rows="4" required></textarea>
+
+    <label for="rating">Rating:</label>
+    <select id="rating" name="rating" required>
+      <option value="5">5 - Excellent</option>
+      <option value="4">4 - Very Good</option>
+      <option value="3">3 - Good</option>
+      <option value="2">2 - Fair</option>
+      <option value="1">1 - Poor</option>
+    </select>
+
+    <button type="button" onclick="validateAndSubmit()">Submit</button>
+  </form>
+
+  <script>
+    function validateAndSubmit() {
+      var name = document.getElementById('name').value;
+      var email = document.getElementById('email').value;
+      var age = document.getElementById('age').value;
+      var feedback = document.getElementById('feedback').value;
+      var rating = document.getElementById('rating').value;
+
+      if (name === "" || email === "" || age === "" || feedback === "" || rating === "") {
+        alert('Please answer all questions before submitting the form.');
+      } else {
+        alert('Form submitted!');
+        document.getElementById('surveyForm').reset(); 
+        window.location.href = "http://127.0.0.1:5500/project.html/SURVEYTHNKU.HTML";
+      }
+    }
+  </script>
+
+</body>
+</html>
+<script>const express = require('express');
+  const bodyParser = require('body-parser');
+  
+  const app = express();
+  const port = 3000;
+  
+  app.use(bodyParser.urlencoded({ extended: false }));
+  
+  app.post('/submit-form', (req, res) => {
+    const { name, email, age, feedback, rating } = req.body;
+  
+    // Here, you can perform validation, store data in a database, etc.
+  
+    // For demonstration purposes, let's just log the form data
+    console.log('Form submitted:', { name, email, age, feedback, rating });
+  
+    res.send('Form submitted successfully!');
+  });
+  
+  app.listen(port, () => {
+    console.log(`Server is running on http://localhost:${port}`);
+  });
+  </script>
+  <script>function validateAndSubmit() {
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var age = document.getElementById('age').value;
+    var feedback = document.getElementById('feedback').value;
+    var rating = document.getElementById('rating').value;
+  
+    if (name === "" || email === "" || age === "" || feedback === "" || rating === "") {
+      alert('Please answer all questions before submitting the form.');
+    } else {
+      // Send form data to backend server
+      fetch('http://localhost:3000/submit-form', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ name, email, age, feedback, rating }),
+      })
+      .then(response => response.text())
+      .then(data => {
+        alert(data); // Display response from server
+        document.getElementById('surveyForm').reset();
+      })
+      .catch(error => {
+        console.error('Error:', error);
+        alert('An error occurred. Please try again later.');
+      });
+    }
+  }
+  </script>
