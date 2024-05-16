@@ -1,6 +1,7 @@
-***Project Name: Cosmetic Survey Form***
 
-**Description:**
+# <span style="font-size: larger;">Project Name: Cosmetic Survey Form</span>
+
+**Description:**<br>
 The Cosmetic Survey Form project endeavors to craft an interactive platform aimed at understanding user preferences in the realm of cosmetics. By leveraging HTML, CSS, and JavaScript, the form will facilitate the collection of invaluable feedback on cosmetic products and brands. This initiative seeks to bridge the gap between consumers and cosmetic brands, fostering informed product development and marketing strategies. Through an intuitive user interface and robust functionality, the survey aims to streamline data acquisition and analysis, thereby informing strategic business decisions within the cosmetics industry.
 
 **Feature Timeline:**
