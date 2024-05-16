@@ -19,16 +19,5 @@ This project aims to create a survey form focusing on cosmetics. The form is des
 3. Client-side form validation using JavaScript.
 4. Responsive design to ensure compatibility with various devices and screen sizes.
 
-**Instructions for Running the Project:**
-1. Clone the repository to your local machine.
-   ```
-   git clone <repository_URL>
-   ```
-2. Navigate to the project directory.
-   ```
-   cd cosmetic-survey-form
-   ```
-3. Open the `LoginSurveyForm.html` file in your preferred web browser.
-
 **Acknowledgments:**
 We would like to express our gratitude to Mr. Vibhu Sharma for their guidance and support throughout the development of this project. Additionally, we thank our peers for their valuable feedback and contributions.
