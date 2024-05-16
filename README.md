@@ -1,23 +1,75 @@
-**Project Name: Cosmetic Survey Form**
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmetic Survey Form - README</title>
+</head>
+<body>
 
-**Description:**
-This project aims to create a survey form focusing on cosmetics. The form is designed to gather user feedback and preferences regarding various cosmetic products and brands. The survey form will be implemented using HTML, CSS, and JavaScript.
+    <h1>Project Name: Cosmetic Survey Form</h1>
 
-**Team Members:**
-1. Ojasvita (Roll no. 2310990756)
-2. Nishant (Roll no. 2310990753)
-3. Nomita (Roll no. 2310990755)
+    <h2>Description:</h2>
+    <p>The Cosmetic Survey Form project endeavors to craft an interactive platform aimed at understanding user preferences in the realm of cosmetics. By leveraging HTML, CSS, and JavaScript, the form will facilitate the collection of invaluable feedback on cosmetic products and brands. This initiative seeks to bridge the gap between consumers and cosmetic brands, fostering informed product development and marketing strategies. Through an intuitive user interface and robust functionality, the survey aims to streamline data acquisition and analysis, thereby informing strategic business decisions within the cosmetics industry.</p>
 
-**Project Structure:**
-- **HTML:** The project utilizes HTML for structuring the survey form and its content.
-- **CSS:** CSS is employed for styling the survey form, ensuring a visually appealing and consistent layout.
-- **JavaScript:** JavaScript is used to implement dynamic functionality and form validation, enhancing user interactivity and ensuring data accuracy.
+    <h2>Feature Timeline:</h2>
+    <table>
+        <tr>
+            <th>S.No.</th>
+            <th>Feature</th>
+            <th>Detail</th>
+            <th>Time</th>
+            <th>Duration</th>
+            <th>Deadline</th>
+            <th>Status</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>User-friendly layout</td>
+            <td>Designing an intuitive survey form layout</td>
+            <td>Week 1-2</td>
+            <td>2 weeks</td>
+            <td>MM/DD</td>
+            <td>In Progress</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Interactive elements</td>
+            <td>Implementing engaging user interface elements</td>
+            <td>Week 2-3</td>
+            <td>2 weeks</td>
+            <td>MM/DD</td>
+            <td>Not Started</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Form validation</td>
+            <td>Integrating client-side validation with JavaScript</td>
+            <td>Week 3-4</td>
+            <td>2 weeks</td>
+            <td>MM/DD</td>
+            <td>Not Started</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Responsive design</td>
+            <td>Ensuring compatibility across devices</td>
+            <td>Week 4-5</td>
+            <td>2 weeks</td>
+            <td>MM/DD</td>
+            <td>Not Started</td>
+        </tr>
+    </table>
 
-**Features:**
-1. User-friendly survey form layout.
-2. Interactive elements for an engaging user experience.
-3. Client-side form validation using JavaScript.
-4. Responsive design to ensure compatibility with various devices and screen sizes.
+    <h2>Team Members:</h2>
+    <ul>
+        <li>Ojasvita (Roll no. 2310990756)</li>
+        <li>Nishant (Roll no. 2310990753)</li>
+        <li>Nomita (Roll no. 2310990755)</li>
+    </ul>
 
-**Acknowledgments:**
-We would like to express our gratitude to Mr. Vibhu Sharma for their guidance and support throughout the development of this project. Additionally, we thank our peers for their valuable feedback and contributions.
+    <h2>Acknowledgments:</h2>
+    <p>We extend our heartfelt appreciation to Mr. Vibhu Sharma for their unwavering guidance and support throughout the project's development. Additionally, we express gratitude to our peers for their invaluable feedback and contributions, which have significantly enriched our endeavor.</p>
+
+</body>
+</html>
